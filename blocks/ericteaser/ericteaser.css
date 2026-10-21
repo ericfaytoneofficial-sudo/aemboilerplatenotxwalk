@@ -1,0 +1,46 @@
+.ericteaser {
+  display: grid;
+  gap: 24px;
+  align-items: center;
+}
+
+.ericteaser > div {
+  display: grid;
+  gap: 24px;
+  align-items: center;
+}
+
+.ericteaser-image {
+  line-height: 0;
+}
+
+.ericteaser-image img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.ericteaser-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ericteaser-body h2,
+.ericteaser-body h3,
+.ericteaser-body p {
+  margin: 0;
+}
+
+.ericteaser-body a {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+@media (width >= 900px) {
+  .ericteaser > div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
